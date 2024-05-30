@@ -8,14 +8,10 @@ import Login from '../Login';
 function Welcome({navigation}){
 
     const logar = () => {
-   
-
         navigation.navigate('Login');
     } ;
 
     const cadastrar = () => {
-   
-
         navigation.navigate('Cadastro');
     } ;
     
@@ -24,8 +20,11 @@ function Welcome({navigation}){
     return (
 
         <View style={styles.container}>
+            
             <Text style={styles.bemVindo}> SEJA BEM VINDO!</Text>
-            <Image style={styles.logo} source={require('../../../assets/logo.png')} />
+            {/* Logo */}
+            <Image style={styles.logo} source={'/src/assets/logo.png'} />
+            
             <Text style={styles.titulo}>BookConnect</Text>
 
             {/* botões */}

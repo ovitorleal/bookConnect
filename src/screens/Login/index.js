@@ -15,7 +15,7 @@ function Login({navigation}){
 
     return(
        <View style={styles.boxLogin}>
-        <Image source={require('../../../assets/logo.png')} style={styles.logo} />
+        <Image source={'/src/assets/logo.png'} style={styles.logo} />
         <Text style={styles.titulo}>BookConnect</Text>
 
         
@@ -70,7 +70,13 @@ const styles = StyleSheet.create({
         marginBottom: 15,
         paddingLeft: 190,
         textDecorationLine: 'underline'
-    }
+    },
+    logo: {
+        width: 200,
+        height: 160,
+        resizeMode: 'contain',
+
+    },
 
 });
 

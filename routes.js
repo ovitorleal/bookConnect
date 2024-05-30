@@ -4,7 +4,8 @@ import Home from "./src/screens/Home";
 import Cliente from "./src/screens/Clientes";
 import Produto from "./src/screens/Produtos";
 import Welcome from "./src/screens/Welcome";
-
+import Cadastro from "./src/screens/Cadastro";
+import Download from "./src/screens/Download";
 
 // 2° Criar a navegação em sí.
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
@@ -14,7 +15,7 @@ const Stack = createNativeStackNavigator();
 const Tab = createBottomTabNavigator();
 
 import { SimpleLineIcons } from '@expo/vector-icons';
-import Cadastro from "./src/screens/Cadastro";
+
 import { CORES } from "./src/constants/cores";
 
 
@@ -23,7 +24,7 @@ export const StackNavigate = () => {
     return (
         <Stack.Navigator initialRouteName="Welcome">
             <Stack.Screen
-                name="welcome"
+                name="Welcome"
                 component={Welcome}
                 options={{
                     headerShown: false
@@ -43,51 +44,74 @@ export const StackNavigate = () => {
                     headerShown: false
                 }}
             />
+            <Stack.Screen
+                name="Home"
+                component={TabNavigate}
+                options={{
+                    headerShown: false
+                }}
+            />
+
         </Stack.Navigator>
     )
 }
 
 export const TabNavigate = () => {
     return (
-        <Tab.Navigator>
+        <Tab.Navigator
+            screenOptions={{
+                tabBarStyle: { backgroundColor: '#d9d9d9', borderTopLeftRadius: 20, 
+                    borderTopRightRadius: 20, paddingTop: 10},
+                tabBarActiveTintColor: CORES.COR_PRIMARIA,
+                tabBarInactiveTintColor: 'gray',
+                tabBarIconStyle: { color: 'white' },
+                tabBarLabelStyle: { fontSize: 12}
+                
+            }}
+        >
             <Tab.Screen
                 name="Home"
                 component={Home}
                 options={{
-                    tabBarIcon: () => (
-                    <SimpleLineIcons name="home" size={24} color="black" />
-                ),
-                    tabBarActiveTintColor: CORES.COR_PRIMARIA,
-                    tabBarInactiveTintColor: 'gray',
-                    
+                    tabBarIcon: ({ color }) => (
+                        <SimpleLineIcons name="home" size={24} color={color} />
+                    ),
+                    headerShown: false
                 }}
             />
 
             <Tab.Screen
-                name="Cliente"
+                name="Continue lendo"
                 component={Cliente}
                 options={{
-                    tabBarIcon: () => (
-                        <SimpleLineIcons name="user" size={24} color="black" />
+                    tabBarIcon: ({ color }) => (
+                        <SimpleLineIcons name="book-open" size={24} color={color} />
                     ),
-                    tabBarActiveTintColor: CORES.COR_PRIMARIA,
-                    tabBarInactiveTintColor: 'gray',
-                    // tabBarBadge:3
+                    headerShown: false
                 }}
             />
 
+              <Tab.Screen
+                name="Downloads"
+                component={Cliente}
+                options={{
+                    tabBarIcon: ({ color }) => (
+                        <SimpleLineIcons name="cloud-download" size={24} color={color} />
+                    ),
+                    headerShown: false
+                }}
+            /> 
+
             <Tab.Screen
-                name="Produto"
+                name="Configurações"
                 component={Produto}
                 options={{
-                    tabBarIcon: () => (
-                        <SimpleLineIcons name="settings" size={24} color="black" />
+                    tabBarIcon: ({ color }) => (
+                        <SimpleLineIcons name="settings" size={24} color={color} />
                     ),
-                    tabBarActiveTintColor: CORES.COR_PRIMARIA,
-                    tabBarInactiveTintColor: 'gray',
-                    // tabBarBadge:3
+                    headerShown: false
                 }}
             />
         </Tab.Navigator>
-    )
-}
+    );
+};

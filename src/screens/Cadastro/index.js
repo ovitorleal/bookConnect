@@ -6,14 +6,14 @@ function Cadastro({navigation}){
     const cadastrar = () => {
    
 
-        navigation.navigate('Cadastro');
+        navigation.navigate('Home');
     } ;
     
     
     return(
         <SafeAreaView style={styles.container}>
         <View >  
-        <Image style={styles.img} source={require('../../../assets/logo.png')}/>
+        <Image style={styles.img} source={'/src/assets/logo.png'}/>
         
 
         {/* NOME COMPLETO */}
