@@ -14,7 +14,8 @@ export default function Home () {
                 {livrosDisponiveis.map((livro, index) => (
                     <View key={index} style={styles.livro}>
                         <Image source={livro.capa} style={styles.image} />
-                        <Text>{livro.nome}</Text>
+                        {/* Título do livros */}
+                        <Text style ={styles.titulo}>{livro.nome}</Text>
                     </View>
                 ))}
             </ScrollView>
@@ -26,7 +27,8 @@ export default function Home () {
                 {livrosDisponiveis.map((livro, index) => (
                     <View key={index} style={styles.livro}>
                         <Image source={livro.capa} style={styles.image} />
-                        <Text>{livro.nome}</Text>
+                        {/* Título do livros */}
+                        <Text style ={styles.titulo}>{livro.nome}</Text> 
                     </View>
                 ))}
             </ScrollView>
@@ -57,11 +59,11 @@ const styles = StyleSheet.create({
         marginBottom: 5,
     },
     logo: {
-        width: 200,
-        height: 160,
+        width: 150,
+        height: 110,
         resizeMode: 'contain',
         justifyContent: 'center',
-        marginLeft: 100
+        marginLeft: 110
     },
     recomendados: {
         marginTop: 5,
@@ -81,4 +83,8 @@ const styles = StyleSheet.create({
         color: 'white',
         fontFamily: 'Courier'
     },
+    titulo: {
+        color: 'white',
+        fontSize: 12
+    }
 });

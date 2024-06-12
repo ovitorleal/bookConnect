@@ -1,5 +1,5 @@
 import React from "react";
-import { StyleSheet, View, Text, Alert, Image } from "react-native"
+import { StyleSheet, View, Text, Image } from "react-native"
 import MeuInput from "../../components/MeuInput";
 import { CORES } from "../../constants/cores";
 import MeuButton from "../../components/MeuButton";
@@ -72,8 +72,8 @@ const styles = StyleSheet.create({
         textDecorationLine: 'underline'
     },
     logo: {
-        width: 200,
-        height: 160,
+        width: 150,
+        height: 110,
         resizeMode: 'contain',
 
     },

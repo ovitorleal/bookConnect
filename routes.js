@@ -60,11 +60,10 @@ export const TabNavigate = () => {
     return (
         <Tab.Navigator
             screenOptions={{
-                tabBarStyle: { backgroundColor: '#d9d9d9', borderTopLeftRadius: 20, 
-                    borderTopRightRadius: 20, paddingTop: 10},
+                tabBarStyle: { backgroundColor: '#1a1a1a', 
+                     paddingTop: 10, borderTopColor: '#1a1a1a' },
                 tabBarActiveTintColor: CORES.COR_PRIMARIA,
-                tabBarInactiveTintColor: 'gray',
-                tabBarIconStyle: { color: 'white' },
+                tabBarInactiveTintColor: 'white',
                 tabBarLabelStyle: { fontSize: 12}
                 
             }}
