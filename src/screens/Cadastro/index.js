@@ -1,6 +1,7 @@
 import React from "react";
 import { StyleSheet, View, SafeAreaView, Image, Text, Alert, TextInput, ScrollView } from "react-native";
 import MeuButton from "../../components/MeuButton";
+import MeuInput from "../../components/MeuInput";
 
 function Cadastro({navigation}){
     const cadastrar = () => {
@@ -33,18 +34,23 @@ function Cadastro({navigation}){
 
         {/* Senha */}
 
-        <Text style={styles.label}>Senha:</Text>
-        <TextInput style={styles.input}/>
+        <MeuInput
+            label="Senha"
+            comMascara={true}
+        />
 
         {/* Confirme sua Senha */}
 
-        <Text style={styles.label}>Confirme sua Senha:</Text>
-        <TextInput style={styles.input}/>
-    
-        <MeuButton style={MeuButton}
-                value="Cadastrar"
-                callback={cadastrar}
-            />
+        <MeuInput
+            label="Confirme sua senha"
+            comMascara={true}
+        />
+
+            {/* botão cadastrar */}
+        <MeuButton
+            value="Cadastrar"
+            callback={cadastrar}
+        />
     
         </View> 
         </SafeAreaView>
