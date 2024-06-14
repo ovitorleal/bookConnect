@@ -6,6 +6,8 @@ import Produto from "./src/screens/Produtos";
 import Welcome from "./src/screens/Welcome";
 import Cadastro from "./src/screens/Cadastro";
 import Download from "./src/screens/Download";
+import ContinueLendo from "./src/screens/ContinueLendo";
+import Configuracoes from "./src/screens/Configuracoes";
 
 // 2° Criar a navegação em sí.
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
@@ -64,7 +66,7 @@ export const TabNavigate = () => {
                      paddingTop: 10, borderTopColor: '#1a1a1a' },
                 tabBarActiveTintColor: CORES.COR_PRIMARIA,
                 tabBarInactiveTintColor: 'white',
-                tabBarLabelStyle: { fontSize: 12}
+                tabBarLabelStyle: { fontSize: 11}
                 
             }}
         >
@@ -92,7 +94,7 @@ export const TabNavigate = () => {
 
               <Tab.Screen
                 name="Downloads"
-                component={Cliente}
+                component={Download}
                 options={{
                     tabBarIcon: ({ color }) => (
                         <SimpleLineIcons name="cloud-download" size={24} color={color} />
