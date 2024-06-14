@@ -1,8 +1,6 @@
 // 1° Preciso improtar as screens  que vão ficar dentro das minhas rotas.
 import Login from "./src/screens/Login";
 import Home from "./src/screens/Home";
-import Cliente from "./src/screens/Clientes";
-import Produto from "./src/screens/Produtos";
 import Welcome from "./src/screens/Welcome";
 import Cadastro from "./src/screens/Cadastro";
 import Download from "./src/screens/Download";
@@ -83,7 +81,7 @@ export const TabNavigate = () => {
 
             <Tab.Screen
                 name="Continue lendo"
-                component={Cliente}
+                component={ContinueLendo}
                 options={{
                     tabBarIcon: ({ color }) => (
                         <SimpleLineIcons name="book-open" size={24} color={color} />
@@ -105,7 +103,7 @@ export const TabNavigate = () => {
 
             <Tab.Screen
                 name="Configurações"
-                component={Produto}
+                component={Configuracoes}
                 options={{
                     tabBarIcon: ({ color }) => (
                         <SimpleLineIcons name="settings" size={24} color={color} />
