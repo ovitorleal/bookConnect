@@ -5,8 +5,11 @@ import MeuButton from "../../components/MeuButton";
 import Login from '../Login';
 
 
+
 function Welcome({navigation}){
 
+   
+    
     const logar = () => {
         navigation.navigate('Login');
     } ;
@@ -72,7 +75,7 @@ const styles = StyleSheet.create({
         fontWeight: 500,
         marginTop: 1,
         marginBottom: 35,
-        fontFamily: 'Courier'
+        fontFamily: 'Courier '
     }
 
 

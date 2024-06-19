@@ -7,7 +7,7 @@ function shuffleArray(array) {
 }
 
 export const livrosDisponiveis = shuffleArray([
-    { numero: 1, nome: '5 Aneis', capa:'/src/assets/5aneis.jpg', leitura: Math.random()},
+    { numero: 1, nome: '5 Aneis', description: 'dasjodasodj', capa:'/src/assets/5aneis.jpg', leitura: Math.random()},
     { numero: 2, nome: 'Arte da Guerra', capa:'/src/assets/artedaguerra.jpg', leitura: Math.random()},
     { numero: 3, nome: 'Biblia', capa:'/src/assets/biblia.jpg', leitura: Math.random()},
     { numero: 4, nome: 'Bushido', capa:'/src/assets/bushido.jpg', leitura: Math.random()},

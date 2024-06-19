@@ -22,6 +22,9 @@
     },
     "web": {
       "favicon": "./assets/adaptive-icon.png"
-    }
+    },
+    "plugins": [
+      "expo-font"
+    ]
   }
 }
