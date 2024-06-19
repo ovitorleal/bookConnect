@@ -27,12 +27,7 @@ export default function Configuracoes() {
                         name="bell"
                     />
                     <Text style={styles.titulo}>Notificações</Text>
-                    <SimpleLineIcons
-                        style={{ marginLeft: 75 }}
-                        size={24}
-                        color="#fff"
-                        name="arrow-right"
-                    />
+                   
 
                 </View>
 
@@ -50,12 +45,7 @@ export default function Configuracoes() {
                         name="arrow-down-circle"
                     />
                     <Text style={styles.titulo}>Downloads</Text>
-                    <SimpleLineIcons
-                        style={{ marginLeft: 110 }}
-                        size={24}
-                        color="#fff"
-                        name="arrow-right"
-                    />
+                    
 
                 </View>
 
@@ -73,12 +63,7 @@ export default function Configuracoes() {
                         name="user"
                     />
                     <Text style={styles.titulo}>Usuário</Text>
-                    <SimpleLineIcons
-                        style={{ marginLeft: 130}}
-                        size={24}
-                        color="#fff"
-                        name="arrow-right"
-                    />
+                    
 
                 </View>
 
@@ -96,12 +81,7 @@ export default function Configuracoes() {
                         name="earphones-alt"
                     />
                     <Text style={styles.titulo}>Ajuda</Text>
-                    <SimpleLineIcons
-                        style={{ marginLeft: 150 }}
-                        size={24}
-                        color="#fff"
-                        name="arrow-right"
-                    />
+                   
 
                 </View>
 
@@ -118,12 +98,7 @@ export default function Configuracoes() {
                         name="logout"
                     />
                     <Text style={styles.titulo}>Sair</Text>
-                    <SimpleLineIcons
-                        style={{ marginLeft: 160 }}
-                        size={24}
-                        color="#fff"
-                        name="arrow-right"
-                    />
+                   
 
                 </View>
 
