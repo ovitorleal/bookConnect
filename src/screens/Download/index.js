@@ -3,7 +3,7 @@ import { Text } from "react-native"
 import { livrosDisponiveis } from "../../Biblioteca/livrosDisponiveis.js";
 import { View, Image, StyleSheet, SafeAreaView, ScrollView, FlatList } from "react-native";
 
-import * as Progress from 'react-native-progress';
+
 
 
 

@@ -27,81 +27,56 @@ export default function Configuracoes() {
                         name="bell"
                     />
                     <Text style={styles.titulo}>Notificações</Text>
-                   
-
                 </View>
-
             </TouchableOpacity>
 
-
-            <TouchableOpacity style={styles.botao}>
-                
-                <View style={styles.content}>
-                   
+            <TouchableOpacity style={styles.botao}>               
+                <View style={styles.content}>                   
                     <SimpleLineIcons
                         style={{ marginRight: 12 }}
                         size={24}
                         color="#fff"
                         name="arrow-down-circle"
                     />
-                    <Text style={styles.titulo}>Downloads</Text>
-                    
-
+                    <Text style={styles.titulo}>Downloads</Text>                    
                 </View>
-
             </TouchableOpacity>
 
 
-            <TouchableOpacity style={styles.botao}>
-               
-                <View style={styles.content}>
-                   
+            <TouchableOpacity style={styles.botao}>               
+                <View style={styles.content}>                   
                     <SimpleLineIcons
                         style={{ marginRight: 12 }}
                         size={24}
                         color="#fff"
                         name="user"
                     />
-                    <Text style={styles.titulo}>Usuário</Text>
-                    
-
+                    <Text style={styles.titulo}>Usuário</Text>                    
                 </View>
-
             </TouchableOpacity>
 
-
-            <TouchableOpacity style={styles.botao}>
-                
-                <View style={styles.content}>
-                    
+            <TouchableOpacity style={styles.botao}>                
+                <View style={styles.content}>                    
                     <SimpleLineIcons
                         style={{ marginRight: 12 }}
                         size={24}
                         color="#fff"
                         name="earphones-alt"
                     />
-                    <Text style={styles.titulo}>Ajuda</Text>
-                   
-
+                    <Text style={styles.titulo}>Ajuda</Text>                   
                 </View>
-
             </TouchableOpacity>
 
-            <TouchableOpacity style={styles.botao}>
-                
-                <View style={styles.content}>
-                    
+            <TouchableOpacity style={styles.botao}>                
+                <View style={styles.content}>                    
                     <SimpleLineIcons
                         style={{ marginRight: 12 }}
                         size={24}
                         color="#fff"
                         name="logout"
                     />
-                    <Text style={styles.titulo}>Sair</Text>
-                   
-
+                    <Text style={styles.titulo}>Sair</Text>                   
                 </View>
-
             </TouchableOpacity>
             </View>
 
