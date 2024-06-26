@@ -63,7 +63,7 @@ const styles = StyleSheet.create({
         height: 110,
         resizeMode: 'contain',
         justifyContent: 'center',
-        marginLeft: 110
+        marginHorizontal: 'auto'
     },
     recomendados: {
         marginTop: 5,

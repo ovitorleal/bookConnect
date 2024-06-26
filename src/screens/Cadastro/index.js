@@ -74,7 +74,8 @@ const styles = StyleSheet.create({
         margin: 'auto',
         paddingTop: 200,
         display: 'flex',
-        marginBottom: 1
+        marginBottom: 1,
+        marginHorizontal: 'auto',
         
         
     },

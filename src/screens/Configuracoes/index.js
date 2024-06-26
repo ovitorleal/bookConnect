@@ -102,9 +102,10 @@ const styles = StyleSheet.create({
     logo: {
         width: 190,
         height: 150,
+        marginHorizontal: 'auto',
         resizeMode: 'contain',
         justifyContent: 'center',
-        marginLeft: 110
+        
     },
     botao: {
         backgroundColor: CORES.COR_PRIMARIA,

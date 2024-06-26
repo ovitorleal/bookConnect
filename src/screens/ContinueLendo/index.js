@@ -65,13 +65,14 @@ const styles = StyleSheet.create({
         width: 120,
         height: 150,
         marginBottom: 5,
+        
     },
     logo: {
         width: 150,
         height: 110,
         resizeMode: 'contain',
         justifyContent: 'center',
-        marginLeft: 110
+        marginHorizontal: 'auto',
     },
     continue: {
         marginTop: 5,
