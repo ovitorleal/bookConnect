@@ -77,4 +77,4 @@ Inicie o servidor
 - [Léo Fort](https://github.com/Kiiryuu)
 - [Vitor Leal](https://github.com/ovitorleal)
 - [Diogo Rocha](https://github.com/DiogoRocha22)
-
+- [Lucas Gentil](https://github.com/catochos)
