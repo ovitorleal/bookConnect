@@ -41,13 +41,13 @@ Este é um aplicativo desenvolvido com ReactNative para a empresa BookConnect, a
 Clone o projeto
 
 ```bash
-  git clone https://link-para-o-projeto
+  git clone https://github.com/ovitorleal/bookConnect.git
 ```
 
 Entre no diretório do projeto
 
 ```bash
-  cd my-project
+  cd nome-da-pasta-contendo-diretório
 ```
 
 Instale as dependências
