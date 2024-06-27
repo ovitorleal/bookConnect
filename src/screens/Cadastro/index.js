@@ -96,6 +96,8 @@ const styles = StyleSheet.create({
         marginBottom: 10,
         color: 'black',
         fontFamily: 'Courier',
+        height: 35,
+        width: 320
     },
     titulo: {
         fontSize: 40,

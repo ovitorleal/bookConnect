@@ -1,7 +1,9 @@
 import React from "react"
-import { Text } from "react-native"
+import { Text, TouchableOpacity } from "react-native"
 import { livrosDisponiveis } from "../../Biblioteca/livrosDisponiveis.js";
-import { View, Image, StyleSheet, SafeAreaView, ScrollView, FlatList } from "react-native";
+import { View, Image, StyleSheet, SafeAreaView, ScrollView } from "react-native";
+import { CORES } from "../../constants/cores.js";
+
 
 
 
@@ -12,17 +14,24 @@ export default function Download () {
         <SafeAreaView style= {styles.container}>
 
             <Image source={'/src/assets/logo.png'} style={styles.logo} />
-            {/*BAIXADOS*/}
-            <Text style= {styles.continue}>Downloads:</Text>
+           
+            
+            <Text style= {styles.downloads}>Downloads:</Text>
             <ScrollView  style={styles.carrossel}>
+            
+               
                 {livrosDisponiveis.map((livro, index,) => (
-                    <View key={index} style={styles.livro}>
-                        <Image source={livro.capa} style={styles.image} />
-                        {/* Título do livros */}
+                   <TouchableOpacity>
+                   <View key={index} style={styles.livro}>
+                        <Image source={livro.capa} style={styles.image} />                        
+                        {/* Título do livros e descrição */}                        
                         <Text style ={styles.titulo}>{livro.nome}</Text>
                         <Text style={styles.descricao}>{livro.description}</Text>
+                        
                     </View>
+                    </TouchableOpacity>
                 ))}
+            
             </ScrollView>
         </SafeAreaView>
     )
@@ -34,22 +43,23 @@ const styles = StyleSheet.create({
         
         backgroundColor: 'black',
         flex: 1,
-        
-        
+   
     },
     carrossel: {
         marginTop: 10,
     },
     livro: {
-        alignItems: 'left',
+        alignItems: 'center',
         marginRight: 10,
-        flexDirection: 'row'
+        flexDirection: 'row',
+        display: 'flex',
         
     },
     image: {
         width: 120,
         height: 150,
-        marginBottom: 5,
+        marginBottom: 15,
+        
     },
     logo: {
         width: 150,
@@ -58,8 +68,8 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
         marginHorizontal: 'auto'
     },
-    continue: {
-        marginTop: 5,
+    downloads: {
+        marginTop: 0,
         marginBottom: 5,
         marginLeft: 15,
         fontSize: 22,
@@ -78,10 +88,20 @@ const styles = StyleSheet.create({
     },
     titulo: {
         color: 'white',
-        fontSize: 12
+        fontSize: 12,
+        position: 'absolute',
+        marginLeft: 150,
+        marginBottom: 120
+   
     },
     descricao: {
-        color: 'white'
-    }
+        color: 'grey',
+        fontSize: 8,
+        textAlign: 'justify',
+        paddingLeft: 10,
+        fontStyle: 'italic'
+
+    },
+
 });
 

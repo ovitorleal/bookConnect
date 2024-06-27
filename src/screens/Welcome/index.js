@@ -24,6 +24,7 @@ function Welcome({navigation}){
 
         <View style={styles.container}>
             
+            
             <Text style={styles.bemVindo}> SEJA BEM VINDO!</Text>
             {/* Logo */}
             <Image style={styles.logo} source={'/src/assets/logo.png'} />
@@ -62,7 +63,7 @@ const styles = StyleSheet.create({
         fontWeight: 500
 
     },
-
+   
     logo: {
         width: 200,
         height: 160,
