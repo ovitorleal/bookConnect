@@ -1,7 +1,7 @@
 
 #   Aplicativo Livraria BookConnect
 
-Este é um aplicativo desenvolvido com ReactNative para a empresa BookConnect, a fim de estabelecer vinculos entre a livraria e seus clientes.
+Este é um aplicativo chamado BookConnect desenvolvido com ReactNative para a empresa CIA do Livro, a fim de estabelecer vinculos entre a livraria e seus clientes.
 
 
 ## Screenshots
